@@ -16,7 +16,7 @@ const userRouter = require('./routes/user.js');
 
 // -- INIT --
 // 3000 for a port is a convention
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 // Initialize express into a variable
 const app = express();
 const DB = "mongodb+srv://nixon923:carlonixon@cluster0.6pyg8.mongodb.net/?retryWrites=true&w=majority"
